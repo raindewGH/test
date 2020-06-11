@@ -1,0 +1,172 @@
+1   abs()
+取绝对值
+2   all()
+可迭代参数全真，则真
+3   any()
+可迭代参数全负，则负
+4   ascii()
+一个参数，返回ascii字符，对于非ascii字符，使用\u,\U,\x 来替代
+>>> ascii('中国')
+"'\\u4e2d\\u56fd'"
+5   bin()
+返回一个二进制表示
+6   bool()
+返回一个布尔类型，int子类
+7   breakpoint()
+调制器，暂不考虑
+8   bytearray()
+返回值为一个字节数组，每个数字元素都必须在0 - 255范围内
+Init signature: bytearray(self, /, *args, **kwargs)
+Docstring:
+bytearray(iterable_of_ints) -> bytearray
+bytearray(string, encoding[, errors]) -> bytearray
+bytearray(bytes_or_buffer) -> mutable copy of bytes_or_buffer
+bytearray(int) -> bytes array of size given by the parameter initialized with null bytes
+bytearray() -> empty bytes array
+
+Construct a mutable bytearray object from:
+  - an iterable yielding integers in range(256)
+  - a text string encoded using the specified encoding
+  - a bytes or a buffer object
+  - any object implementing the buffer API.
+  - an integer
+9   bytes()
+返回值为一个新的不可修改字节数组，每个数字元素都必须在0 - 255范围内
+同bytearray, 不同之处是返回结果不可修改
+10  callable()
+用于检测一个对象是否可以调用
+11  chr()
+返回0 - 255对应的字符
+12  classmethod()
+@修饰符，返回类方法
+13  compile()
+将一个字符串编译为代码
+14  complex()
+返回一个复数
+15  copyright()
+Docstring:
+interactive prompt objects for printing the license text, a list of
+contributors and the copyright notice.
+16  credits()
+Docstring:
+interactive prompt objects for printing the license text, a list of
+contributors and the copyright notice.
+17  delattr()
+删除属性
+18  dict()
+创建一个字典
+19  dir()
+返回模块的属性列表
+20  display()
+在所有前端中显示Python对象
+21  divmod()
+返回商和余数的元组
+22  enumerate()
+返回数据和数据下标
+23  eval()
+执行一个字符串表达式，并返回表达式的值
+24  exec()
+python3 删去了 execfile()，代替方法如下：
+with open('test1.py','r') as f:
+    exec(f.read())
+25  filter(function, iterable)
+返回一个过滤后的迭代器
+26  float()
+用于将整数和字符串转换为浮点数
+27  format()
+格式化字符串
+28  frozenset()
+返回一个冻结的集合
+29  get_ipython()
+Docstring: Return the currently running IPython instance.
+30  getattr()
+返回一个对象的属性值
+31  globals()
+以字典的形式返回当前位置的全局变量
+32  hasattr()
+用于判断对象是否包含对应的属性
+33  hash()
+用于获取一个对象的hash值
+34  help()
+显示帮助
+35  hex()
+将10进制转换为16进制，返回一个字符串
+36  id()
+返回对象的唯一表示整数，一般是内存地址
+37  input()
+接收一个标准输入数据，返回string类型
+38  int(x, base=10)
+转换为整型
+39  isinstance()
+判断一个对象是否是已知类型，考虑继承关系
+40  issubclass()
+判断是否是子类
+41  iter()
+用来生成迭代器
+42  len()
+返回对象的长度或个数
+43  license()
+Type license() to see the full license text
+44  list()
+元组转列表
+45  locals()
+以字典的形式返回当前位置的局部变量
+46  map()
+根据提供的函数将指定序列做映射
+47  max()
+取最大值
+48  memoryview()
+返回给定对象的内存查看对象
+所谓内存查看对象，是指对支持缓冲区协议的数据进行包装，在不需要复制对象基础上允许Python代码访问。
+49  min()
+取最小值
+50  next()
+迭代器的下一个项目
+51  object()
+52  oct()
+将10进制转换为8进制，返回一个字符串
+53  open()
+打开一个文件
+54  ord()
+范围一个字符的ASCII值
+55  pow()
+返回x**y，或者x**y % z
+56  print()
+打印输出
+57  property()
+用于在新式类中返回属性值
+将 property 函数用作装饰器可以很方便的创建只读属性
+58  range()
+返回一个整数迭代器
+59  repr()
+将对象转化为供解释器读取的形式，返回一个string
+60  reversed()
+用于反向列表中的元素，返回一个迭代器
+61  round()
+返回保留固定位数的四舍五入值
+62  set()
+返回一个无序不重复的集合
+63  setattr()
+对应于getattr()，用于设定属性值
+64  slice()
+实现切片对象，主要用在切片操作函数里的参数传递
+65  sorted()
+返回一个经过排序的列表
+66  staticmethod()
+声明一个静态方法，可无实例化调用
+67  str()
+返回一个对象的string格式
+68  sum()
+可迭代对象的和
+69  super()
+调用父类的一个方法
+70  tuple()
+列表转元组
+71  type()
+返回对象的类型
+72  vars()
+返回对象的属性和属性值的字典
+73  zip()
+将可迭代对象的对应元素，打包成一个个元组，返回会这些元组的可以迭代对象
+
+
